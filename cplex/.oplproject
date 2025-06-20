@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="true" name="EXP_L1" category="opl">
+            			
+            <ref name="data_files/G1_I12_J6_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S1" category="opl">
+            			
+            <ref name="data_files/G1_I12_J6_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D1" category="opl">
+            			
+            <ref name="data_files/G1_I12_J6_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L2" category="opl">
+            			
+            <ref name="data_files/G2_I12_J6_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S2" category="opl">
+            			
+            <ref name="data_files/G2_I12_J6_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D2" category="opl">
+            			
+            <ref name="data_files/G2_I12_J6_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L3" category="opl">
+            			
+            <ref name="data_files/G3_I12_J6_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S3" category="opl">
+            			
+            <ref name="data_files/G3_I12_J6_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D3" category="opl">
+            			
+            <ref name="data_files/G3_I12_J6_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L4" category="opl">
+            			
+            <ref name="data_files/G4_I12_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S4" category="opl">
+            			
+            <ref name="data_files/G4_I12_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D4" category="opl">
+            			
+            <ref name="data_files/G4_I12_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L5" category="opl">
+            			
+            <ref name="data_files/G5_I12_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S5" category="opl">
+            			
+            <ref name="data_files/G5_I12_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D5" category="opl">
+            			
+            <ref name="data_files/G5_I12_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L6" category="opl">
+            			
+            <ref name="data_files/G6_I12_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S6" category="opl">
+            			
+            <ref name="data_files/G6_I12_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D6" category="opl">
+            			
+            <ref name="data_files/G6_I12_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L7" category="opl">
+            			
+            <ref name="data_files/G7_I24_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S7" category="opl">
+            			
+            <ref name="data_files/G7_I24_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D7" category="opl">
+            			
+            <ref name="data_files/G7_I24_J14_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L8" category="opl">
+            			
+            <ref name="data_files/G8_I24_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S8" category="opl">
+            			
+            <ref name="data_files/G8_I24_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D8" category="opl">
+            			
+            <ref name="data_files/G8_I24_J14_K5_L100.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L9" category="opl">
+            			
+            <ref name="data_files/G9_I24_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S9" category="opl">
+            			
+            <ref name="data_files/G9_I24_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D9" category="opl">
+            			
+            <ref name="data_files/G9_I24_J14_K5_L200.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L10" category="opl">
+            			
+            <ref name="data_files/G10_I24_J14_K5_L300.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S10" category="opl">
+            			
+            <ref name="data_files/G10_I24_J14_K5_L300.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D10" category="opl">
+            			
+            <ref name="data_files/G10_I24_J14_K5_L300.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_L11" category="opl">
+            			
+            <ref name="data_files/G11_I24_J14_K5_L500.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_S11" category="opl">
+            			
+            <ref name="data_files/G11_I24_J14_K5_L500.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="config.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="EXP_D11" category="opl">
+            			
+            <ref name="data_files/G11_I24_J14_K5_L500.dat" type="data">
+			</ref>
+            			
+            <ref name="models/fo_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="PARETO_PROFIT" category="opl">
+            			
+            <ref name="models/pareto_curve_profit.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            			
+            <ref name="data_files/G3_I12_J6_K5_L200.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="PARETO_FOOD_SECURITY" category="opl">
+            			
+            <ref name="models/pareto_curve_food_security.mod" type="model">
+			</ref>
+            			
+            <ref name="data_files/G1_I12_J6_K5_L60.dat" type="data">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="PARETO_DIVERSITY" category="opl">
+            			
+            <ref name="models/pareto_curve_diversity.mod" type="model">
+			</ref>
+            			
+            <ref name="config-5min.ops" type="setting">
+			</ref>
+            			
+            <ref name="data_files/G1_I12_J6_K5_L60.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>

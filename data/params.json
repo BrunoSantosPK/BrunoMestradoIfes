@@ -1,0 +1,70 @@
+{
+    "produtividade_cultivo": [0.82, 2, 2, 5, 2, 2, 7.4, 16, 0.66, 2, 0.5, 4, 1, 1],
+
+    "requisito_adubacao": [0.012, 0.004, 0.018, 0.3, 0.2, 0.2, 0.015, 0.03, 0.005, 0.05, 0.025, 0.02, 0.3, 0.22],
+
+    "tempo_crescimento_cultivo": [3, 9, 6, 2, 3, 3, 12, 2, 4, 3, 4, 3, 3, 3],
+
+    "demanda_cultivo": [50, 80, 120, 120, 200, 200, 150, 300, 200, 300, 150, 200, 300, 5],
+
+    "animais_por_lote": [7, 1, 30, 1, 50],
+
+    "area_por_animal": [0.142857142857143, 1, 0.0001, 2.2, 0.016],
+
+    "tempo_crescimento_abate": [5, 3, 2, 5, 4],
+
+    "massa_final_animal": [2.3, 40, 0.15, 95, 0.35],
+
+    "requisito_racao": [3.45, 12, 0.75, 180, 0.56],
+
+    "tempo_gerar_produto_animal": [5, 3, 2, 0, 0],
+
+    "produtividade_produto_animal": [46, 60, 20, 0, 0],
+
+    "esterco_por_animal": [0.1, 5.7, 0.5, 15.1833333333333, 0],
+
+    "alimentacao_cultivo_animal": [
+        [1, 0, 1, 1, 0],
+        [0, 0, 0, 1, 0],
+        [0, 0, 0, 1, 0],
+        [0, 0, 0, 1, 0],
+        [1, 1, 0, 1, 0],
+        [1, 1, 0, 1, 0],
+        [0, 0, 0, 0, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 0],
+        [0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0]
+    ],
+
+    "demanda_carne_animal": [100, 150, 30, 500, 500],
+
+    "demanda_produto_animal": [500, 500, 100, 0, 0],
+
+    "requisito_alimentar_familia_cultivo": [3, 5, 5, 3, 4, 2, 2, 10, 2, 2, 1, 10, 10, 2],
+
+    "requisito_alimentar_familia_carne_animal": [20, 10, 0, 20, 10],
+
+    "requisito_alimentar_familia_produto_animal": [60, 15, 150, 0, 0],
+
+    "custo_fertilizante": 4.6,
+
+    "custo_compra_cultivo": [25.41, 4.99, 6.99, 3.99, 2.00, 2.50, 4.10, 2.00, 6.44, 13.65, 24.70, 4.99, 7.99, 533.33],
+
+    "valor_venda_cultivo": [1.00, 0.48, 3.78, 3.27, 2.00, 2.50, 0.12, 2.00, 2.02, 3.67, 8.00, 2.50, 5.00, 15.00],
+
+    "custo_compra_animal": [6.00, 350.00, 5.00, 250.00, 5.00],
+
+    "custo_compra_racao": [2.81, 2.68, 3.30, 1.95, 2.79],
+
+    "custo_compra_carne_animal": [10.99, 41.99, 39.99, 19.99, 37.00],
+
+    "valor_venda_carne_animal": [7.23, 17.20, 7.00, 6.38, 9.54],
+
+    "custo_compra_produto_animal": [0.50, 4.29, 0.40, 0.00, 0.00],
+
+    "valor_venda_produto_animal": [0.43, 4.00, 0.33, 0.00, 0.00]
+}

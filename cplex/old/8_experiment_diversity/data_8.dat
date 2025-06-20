@@ -1,0 +1,204 @@
+/* ********************************************** */
+/* SECAO DE DADOS RELATIVOS AOS TIPOS DE CULTIVOS */
+/* ********************************************** */
+
+// Definicao dos cultivos avaliados
+// 0 Milho
+// 1 Mandioca
+// 2 Inhame
+// 3 Batata doce
+// 4 Couve
+// 5 Taioba
+// 6 Cana-de-acucar
+// 7 Alface
+// 8 Arroz
+// 9 Feijao
+// 10 Amendoim
+// 11 Melancia
+// 12 Abobora maranhao
+// 13 Pimenta malagueta
+n_plants = 6;
+
+// Produtividade dos cultivos
+// Unidade de medida para 4 (couve) e 4 (taioba): molho / m2
+// Unidade de medida para 7 (alface): pes / m2
+// Unidade de medida outros: kg /m2
+PYC = [0.82, 2, 2, 5, 5, 5];
+
+// Necessidade de adubacao de cada cultivo
+// Unidade de medida: kg / (m2 . mes)
+RAC = [0.012, 0.004, 0.018, 0.3, 0.2, 0.2];
+
+// Tempo de crescimento de cada cultivo
+// Unidade de medida: mes
+TCC = [3, 9, 6, 2, 3, 3];
+
+// Demanda de cultivos
+DCC = [50, 80, 120, 120, 200, 200];
+
+/* ********************************************** */
+/* SECAO DE DADOS RELATIVOS AOS TIPOS DE CULTIVOS */
+/* ********************************************** */
+
+// ------------------------------------------------- //
+
+/* ********************************************* */
+/* SECAO DE DADOS RELATIVOS AOS TIPOS DE ANIMAIS */
+/* ********************************************* */
+
+// Definicao dos animais disponiveis
+// 0 Galinha, obtida em lotes de 7 animais
+// 1 Cabra, obtida em lotes de 1 animais
+// 2 Codorna, obtida em lotes de 30 animais
+// 3 Porco, obtido em lotes de 1 animal
+// 4 Tilapia, obtida em lotes de 50 animais
+// 5 Pato, obtido em lotes de 7 animais
+n_animals = 5;
+AB = [7, 1, 30, 1, 50];
+
+// Area que cada animal necessita para ser criado
+// Unidade: m2 / animal
+// Estes valores sao quebrados porque estao relacionados
+// com a quantidade de animais no lote, porem apresentando
+// desta forma a descricao se torna mais generica para
+// futuras alteracoes nos valores de lotes.
+RAA = [0.142857142857143, 1, 0.0001, 2.2, 0.016];
+
+// Tempo de crescimento para consumo de carne
+// Unidade de medida: mes
+TCA = [5, 3, 2, 5, 4];
+
+// Massa do animal quando esta crescido e pronto para consumo
+// Unidade de medida: kg / animal
+PYA = [2.3, 40, 0.15, 95, 0.35];
+
+// Necessidade de racao para sobrevivencia de cada animal
+// Unidade de medida: kg / (animal . mes)
+RRA = [3.45, 12, 0.75, 180, 0.56];
+
+// Tempo necessario para que um animal comece a gerar produtos
+// Unidade de medida: mes
+// Os animais 3 (porco) e 4 (tilapia) nao geram produtos
+TCP = [5, 3, 2, 0, 0];
+
+// Quantidade de produtos gerados por cada animal
+// Unidade de medida para 0 (galinh), 2 (codorna) e 5 (pato): ovos / mes
+// Unidade de medida para 1 (cabra): kg leite / mes
+PYP = [46, 60, 20, 0, 0];
+
+// Quantidade de esterco produzido por cada animal
+// Alguns valores foram estimativas anuais, por isso estao
+// com muitas casas decimais.
+// Unidade de medida: kg / (animal . mes)
+AGA = [0.1, 5.7, 0.5, 15.1833333333333, 0];
+
+// Definicao da possibilidade de uso de cultivos para alimentacao
+AAC = [
+	[1, 0, 1, 1, 0],
+	[0, 0, 0, 1, 0],
+	[0, 0, 0, 1, 0],
+	[0, 0, 0, 1, 0],
+	[1, 1, 0, 1, 0],
+	[1, 1, 0, 1, 0]
+];
+
+// Demanda de carne animal
+DCA = [100, 150, 30, 500, 500];
+
+// Demanda de produto animal
+DPA = [500, 500, 100, 0, 0];
+
+/* ********************************************* */
+/* SECAO DE DADOS RELATIVOS AOS TIPOS DE ANIMAIS */
+/* ********************************************* */
+ 
+// ------------------------------------------------- //
+ 
+/* ************************************************* */
+/* SECAO DE DADOS RELATIVOS A FAMILIA E NECESSIDADES */
+/* ************************************************* */
+
+// Definicoes de areas, todas em metros quadrados
+total_area = 600;
+mini_batchs = 60;
+area_mini_batch = 10;
+
+// Quantidade de membros da familia
+P = 4;
+
+// Definicao dos meses que serao incluidos no planejamento
+months = 12;
+
+// Necessidade alimentar de cada tipo de cultivo
+// Unidade de medida: forma de obtencao / (mes . pessoa)
+// A forma de obtencao por ser: kg, pes ou molho
+NAC = [3, 5, 5, 3, 4, 2];
+
+// Necessidade alimentar de carne dos animais existentes
+// Unidade de medida: kg / (mes . pessoa)
+NAA = [20, 10, 0, 20, 10];
+
+// Necessidade alimentar de produtos dos animais existentes
+// Unidade de medida: forma de obtencao / (mes . pessoa)
+// A forma de obtencao por ser: ovos ou kg de leite
+NAP = [60, 15, 150, 0, 0];
+
+/* ************************************************* */
+/* SECAO DE DADOS RELATIVOS A FAMILIA E NECESSIDADES */
+/* ************************************************* */
+
+// ------------------------------------------------- //
+
+/* ************************************************ */
+/* SECAO DE DADOS DE COTACOES PARA COMPRAS E VENDAS */
+/* ************************************************ */
+
+// Custo de compra de fertilizante padrao para cultivos
+// Unidade de medida: R$ / kg
+PAC = 4.6;
+
+// Valor de compra do cultivo externamente a propriedade
+// Unidade de medida para 4 (couve) e 4 (taioba): R$ / molho
+// Unidade de medida para 7 (alface): R$ / pes
+// Unidade de medida outros: R$ / kg
+VCC = [25.41, 4.99, 6.99, 3.99, 2.00, 2.50];
+
+// Valor de venda do cultivo produzido na propriedade.
+// Este e o valor cobrado na feira ou por cotacoes de mercado.
+// Unidade de medida para 4 (couve) e 4 (taioba): R$ / molho
+// Unidade de medida para 7 (alface): R$ / pes
+// Unidade de medida outros: R$ / kg
+VVC = [1.00, 0.48, 3.78, 3.27, 2.00, 2.50];
+
+// Valor de compra do animal para ser criado na propriedade
+// Unidade de medida: R$ / animal
+CCA = [6.00, 350.00, 5.00, 250.00, 5.00];
+
+// Valor de compra da racao para cada animal. Normalmente a racao
+// vem em sacos discretizados, porem aqui foi simplificado e colocado
+// preco por kg.
+// Unidade de medida: R$ / kg
+PRA = [2.81, 2.68, 3.30, 1.95, 2.79];
+
+// Preco de compra da carne de cada animal
+// Unidade de medida: R$ / kg
+VCA = [10.99, 41.99, 39.99, 19.99, 37.00];
+
+// Preco de venda de um animal (carne) crido na propriedade
+// Unidade de medida: R$ / kg
+VVA = [7.23, 17.20, 7.00, 6.38, 9.54];
+
+// Preco de compra do produto do animal no mercado
+// Unidade de medida para 0 (galinha), 2 (codorna) e 5 (pato): R$ / ovo
+// Unidade de medida para 1 (cabra): R$ / kg leite
+VCP = [0.50, 4.29, 0.40, 0.00, 0.00];
+
+// Valor de venda do produto animal produzido na propriedade
+// Unidade de medida para 0 (galinha), 2 (codorna) e 5 (pato): R$ / ovo
+// Unidade de medida para 1 (cabra): R$ / kg leite
+VVP = [0.43, 4.00, 0.33, 0.00, 0.00];
+
+/* ************************************************ */
+/* SECAO DE DADOS DE COTACOES PARA COMPRAS E VENDAS */
+/* ************************************************ */
+ 
